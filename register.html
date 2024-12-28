@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Welcome</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <!-- google fonts  -->
+    <!-- wow css  -->
+    <link rel="stylesheet" href="css/wow.min.css" />
+    <!-- animate css  -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- mdbootstrap css-->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="home-page p-4 m-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="Images/pic2.jpg" class="img-fluid w-75 p-3" style="height: 560px;">
+                </div>
+                <div class="col-md-6 pt-4">
+                    <h2 class="fs-1 text-black">Create Account</h2>
+                    <p class="text-muted mt-2 fs-5">Go ahead and sign up, let everyone
+                    <br>know how awesome you are!</p>
+
+                    <form method="post" action="created.html" onsubmit="return validate();">
+                        <div id="errorMessage"></div>
+                        <div class="form-group">
+                            <!-- <i class="fa-solid fa-user text-primary"></i> -->
+                            <input type="text" class="form-control mb-4" name="user" placeholder="Username" id="user">
+                        </div>
+                        <div class="form-group">
+                            <!-- <i class="fa-solid fa-envelope"></i> -->
+                            <input type="text" class="form-control mb-4" name="email" placeholder="E-Mail" id="email">
+                        </div>
+                        <div class="form-group">
+                            <!-- <i class="fa-solid fa-lock"></i> -->
+                            <input type="password" class="form-control mb-4" name="password" placeholder="Password" id="password">
+                        </div>
+                        <div class="form-group">
+                            <!-- <i class="fa-solid fa-lock"></i> -->
+                            <input type="password" class="form-control" name="confirmpassword" placeholder="Confirm Password" id="confirmPassword">
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary fs-6 mt-3">Create New Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- wow js  --> 
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- wow js  -->
+    <!-- fontawsome js  -->
+    <script src="js/all.min.js"></script>
+    <!-- jquery js  -->
+    <script src="js/jquery.slim.min.js"></script>
+    <!-- popper js  -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js  -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- mdbootstrap js  -->
+    <script src="js/mdb.min.js"></script>
+    <!-- script js  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
